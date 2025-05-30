@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🍞 Paska Recipe 🍞</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --main-color: #a34710;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right top, #fff5f0, #ffe0cc);
+    color: #2e2e2e;
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 4.5em;
+    margin-bottom: 30px;
+    color: var(--main-color);
+    text-shadow: 3px 3px #ffe9d4;
+  }
+  h2 {
+    margin-top: 60px;
+    color: #8c3b0c;
+    border-left: 6px solid #deb887;
+    padding-left: 20px;
+    font-size: 2.2em;
+  }
+  ul, ol {
+    margin-left: 40px;
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 1.3em;
+  }
+  li {
+    margin-bottom: 12px;
+  }
+  picture, img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 35px rgba(0,0,0,0.2);
+  }
+  #customFileBtn {
+    display: block;
+    margin: 30px auto 10px auto;
+    padding: 16px 24px;
+    border: 2px solid var(--main-color);
+    border-radius: 12px;
+    font-size: 1.2rem;
+    background-color: #fffaf5;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  #customFileBtn:hover {
+    background-color: #fff0e5;
+    box-shadow: 0 0 10px rgba(163, 71, 16, 0.3);
+  }
+  .ingredient-book {
+    background: linear-gradient(145deg, #fffaf0, #fff0dc);
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(255, 203, 160, 0.5);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    line-height: 2.2;
+    margin-top: 20px;
+    border: 1px solid #f4e1cd;
+    position: relative;
+  }
+  .ingredient-book::before {
+    content: "🍋";
+    font-size: 3em;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1.1em;
+    color: #555;
+    font-style: italic;
+    padding-top: 25px;
+    border-top: 2px dashed #e0cfc3;
+  }
+</style>
+</head>
+<body>
+
+<h1>🍞 Paska Recipe 🍞</h1>
+
+<h2>🌟 Ingredients</h2>
+<div class="ingredient-book">
+  <ul>
+    <li>🍋 Zest of 1 lemon</li>
+    <li>🌿 Cloves, cinnamon, cardamom (to taste)</li>
+    <li>🍦 Vanilla</li>
+    <li>🍬 Candied fruit – 50 g</li>
+    <li>🌰 Almonds – 50 g</li>
+    <li>🍇 Raisins – 50 g</li>
+    <li>🌾 Flour – 650 g</li>
+    <li>🧈 Butter – 200 g (softened)</li>
+    <li>🥚 Egg yolks – 5</li>
+    <li>🍭 Sugar – 150 g</li>
+    <li>🧫 Yeast – 10 g</li>
+    <li>🥛 Milk – 250 ml</li>
+  </ul>
+</div>
+
+<h2>👩‍🍳 Preparation</h2>
+<ol>
+  <li>🌡️ Warm the milk and add the yeast and 200 g of flour. Let it rest in a warm place for 30 minutes.</li>
+  <li>🥣 In a separate bowl, beat the egg yolks with the spices, vanilla, lemon zest, and sugar. Then add the softened butter and mix well.</li>
+  <li>🍞 Combine this mixture with the yeast mixture, add the remaining flour, and knead the dough. Cover and let it rise until doubled in size.</li>
+  <li>🥜 Once the dough has risen, mix in the chopped almonds, raisins, and candied fruit.</li>
+  <li>🧁 Transfer the dough into greased baking molds, filling them to one-third of their height. Let the dough rise again.</li>
+  <li>🔥 Once well risen, bake in a preheated oven at 170–180°C (340–355°F) until golden brown.</li>
+</ol>
+
+<!-- Custom file input -->
+<input type="file" id="photoInput" accept="image/*" style="display: none;">
+<button id="customFileBtn">📷 Upload Your Paska Photo</button>
+
+<!-- Image preview -->
+<picture>
+  <img id="preview" src="https://www.midwestliving.com/thmb/Ja5NufbR_NhWBmbx0nw3t_uYGq4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/KH_011525_MDWL1604-1_paska-e2930926a1214af88f58ae7ba2a76982.jpg" alt="Your uploaded Paska photo will appear here." loading="lazy" decoding="async" />
+</picture>
+
+<footer>
+  &copy; 2025 Paska Perfection. Share the joy of baking. 🧁
+</footer>
+
+<script>
+  const input = document.getElementById('photoInput');
+  const preview = document.getElementById('preview');
+  const customBtn = document.getElementById('customFileBtn');
+
+  customBtn.addEventListener('click', function () {
+    input.click();
+  });
+
+  input.addEventListener('change', function () {
+    const file = this.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+</script>
+
+</body>
+</html>
